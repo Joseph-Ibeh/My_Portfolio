@@ -271,3 +271,22 @@ section {
 .project a:hover {
   text-decoration: underline;
 }
+
+/* Back to Top Link Styles */
+.back-to-top {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #e55b50;
+}
