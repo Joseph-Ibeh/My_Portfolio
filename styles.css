@@ -62,7 +62,6 @@ main {
   margin: auto;
 }
 
-/* Keyframes for header animation */
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -72,6 +71,12 @@ main {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.lobster-font {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 #about {
@@ -113,7 +118,7 @@ main {
   margin-top: 0.5rem;
 }
 
-/* Keyframes for general text animation */
+/* Keyframes for general text */
 @keyframes textGlow {
   0% {
     text-shadow: 0 0 5px #fff;
