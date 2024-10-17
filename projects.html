@@ -26,229 +26,165 @@
       <h1>Joseph Ibeh</h1>
       <p>Cloud/DevOps Engineer</p>
       <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./skills.html">Skills</a>
-        <a href="./contact.html">Contact</a>
+        <a href="index.html" class="home-link">Home</a>
+        <a href="about.html" class="about-link">About</a>
+        <a href="skills.html" class="skills-link">Skills</a>
+        <a href="projects.html" class="projects-link">Projects</a>
+        <a href="contact.html" class="contact-link">Contact</a>
       </nav>
     </header>
 
     <main>
       <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-          <h3>Task Manager</h3>
-          <p>
-            A comprehensive task management application with advanced features.
-          </p>
-          <ul>
-            <li>Add, complete, and remove tasks.</li>
-            <li>Prioritize tasks with High, Medium, and Low levels.</li>
-            <li>Set deadlines using date and time pickers.</li>
-            <li>Receive alarm notifications for upcoming deadlines.</li>
-            <li>
-              Upon task completion, a congratulatory message is displayed to
-              celebrate achievements.
-            </li>
-            <li>
-              Responsive Design: Seamlessly works across devices, ensuring an
-              optimal experience on any screen size.
-            </li>
-            <li>
-              Tasks are stored locally in browser, maintaining persistence even
-              after a refresh.
-            </li>
-          </ul>
-          <p>
-            Live Demo:
-            <a
-              href="https://josephs-task-manager.vercel.app/
-"
-              >View Live</a
-            >
-          </p>
-          <p><strong>Tools and Technologies Used:</strong></p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design Techniques</li>
-          </ul>
+
+        <div class="project-card">
+          <img src="./Assets/task manager.png" alt="Task Manager" />
+          <div class="project-content">
+            <h3 class="project-title">Task Manager</h3>
+            <p>A comprehensive task management application with advanced features.</p>
+            <button class="read-more-button" onclick="toggleReadMore('task-manager')">Read More</button>
+            <div id="task-manager" class="read-more" style="display: none;">
+              <ul>
+                <li>Add, complete, and remove tasks.</li>
+                <li>Prioritize tasks with High, Medium, and Low levels.</li>
+                <li>Set deadlines using date and time pickers.</li>
+                <li>Receive alarm notifications for upcoming deadlines.</li>
+                <li>Upon task completion, a congratulatory message is displayed to celebrate achievements.</li>
+                <li>Responsive Design: Seamlessly works across devices.</li>
+                <li>Tasks are stored locally in browser, maintaining persistence.</li>
+              </ul>
+              <p><strong>Tools and Technologies Used:</strong></p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design Techniques</li>
+              </ul>
+            </div>
+            <p>Live Demo: <a href="https://josephs-task-manager.vercel.app/">View Live</a></p>
+          </div>
         </div>
-        <div class="project">
-          <h3>AltSchool Africa Assignment</h3>
-          <p>
-            Completed and submitted my first-semester assignment at AltSchool
-            Africa, School of Engineering. It consists of four distinct pages:
-          </p>
-          <ul>
-            <li>
-              Personal bio, reasons for joining, and goals with scroll-to-top
-              navigation.
-            </li>
-            <li>
-              AltSchool application form with semantic tags and navigation.
-            </li>
-            <li>Table listing all courses and schools at AltSchool.</li>
-            <li>
-              Responsive page using various media elements to showcase personal
-              info.
-            </li>
-            <li>
-              Cohesive styles ensuring a consistent, responsive design. Used my
-              terminal to push the code to GitHub and then deployed it on
-              Vercel.
-            </li>
-          </ul>
-          <p>
-            View Live:
-            <a href="https://altschool-assignment-lilac.vercel.app/index.html"
-              >View Live Demo</a
-            >
-          </p>
-          <p><strong>Tools and Technologies Used:</strong></p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Responsive Design Techniques</li>
-          </ul>
+
+        <div class="project-card">
+          <img src="./Assets/ALtSchool assignent.png" alt="Assignment " />
+          <div class="project-content">
+            <h3 class="project-title">AltSchool Africa Assignment</h3>
+            <p>Completed and submitted my first-semester assignment at AltSchool Africa, School of Engineering.</p>
+            <button class="read-more-button" onclick="toggleReadMore('altschool-assignment')">Read More</button>
+            <div id="altschool-assignment" class="read-more" style="display: none;">
+              <ul>
+                <li>Personal bio, reasons for joining, and goals with scroll-to-top navigation.</li>
+                <li>AltSchool application form with semantic tags.</li>
+                <li>Table listing all courses and schools at AltSchool.</li>
+                <li>Responsive page using various media elements to showcase personal info.</li>
+                <li>Cohesive styles ensuring a consistent, responsive design.</li>
+              </ul>
+              <p><strong>Tools and Technologies Used:</strong></p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive Design Techniques</li>
+              </ul>
+            </div>
+            <p>Live Demo: <a href="https://altschool-assignment-lilac.vercel.app/index.html">View Live Demo</a></p>
+          </div>
         </div>
-        <div class="project">
-          <h3>Personal Portfolio</h3>
-          <p>
-            This portfolio site showcases my projects, skills, and experience.
-            It includes sections for my projects, blog, and GitHub profile.
-            Designed to be a comprehensive introduction to my work and
-            capabilities.
-          </p>
-          <p>
-            View Live:
-            <a href="https://josephibehdev.vercel.app">View Live Demo</a>
-          </p>
-          <p><strong>Tools and Technologies Used:</strong></p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design Techniques</li>
-          </ul>
 
-          <h3>Modern Scientific Calculator</h3>
-          <p>
-            A sleek and responsive scientific calculator designed for both basic
-            and advanced mathematical functions.
-          </p>
-          <ul>
-            <li>
-              Perform basic arithmetic operations: addition, subtraction,
-              multiplication, and division.
-            </li>
-            <li>
-              Advanced functions include square root, power, sine, cosine, and
-              tangent calculations.
-            </li>
-            <li>
-              Intuitive and user-friendly interface with a clear, easy-to-read
-              display.
-            </li>
-            <li>
-              Responsive Design that adapts seamlessly to various screen sizes,
-              providing a smooth experience across mobile devices, tablets, and
-              desktops.
-            </li>
-            <li>
-              Modern Aesthetics with a clean color scheme, stylish design, and
-              interactive feedback for user interactions.
-            </li>
-            <li>
-              Real-time calculations with immediate updates to the display as
-              operations are performed.
-            </li>
-            <li>
-              Accessible Design: Includes screen reader features and ARIA
-              attributes to ensure usability for individuals with visual
-              impairments.
-            </li>
-          </ul>
-          <p>
-            Live Demo:
-            <a href="https://modern-scientific-calculator.vercel.app"
-              >View Live</a
-            >
-          </p>
+        <div class="project-card">
+          <img src="./Assets/portfolio screenshot.png" alt="Portfolio" />
+          <div class="project-content">
+            <h3 class="project-title">Personal Portfolio</h3>
+            <p>This portfolio site showcases my projects, skills, and experience.</p>
+            <button class="read-more-button" onclick="toggleReadMore('personal-portfolio')">Read More</button>
+            <div id="personal-portfolio" class="read-more" style="display: none;">
+              <p><strong>Tools and Technologies Used:</strong></p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design Techniques</li>
+              </ul>
+            </div>
+            <p>Live Demo: <a href="https://josephibehdev.vercel.app">View Live Demo</a></p>
+          </div>
+        </div>
 
-          <p><strong>Tools and Technologies Used:</strong></p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design Techniques</li>
-          </ul>
+        <div class="project-card">
+          <img src="./Assets/calc.png" alt="Modern Scientific Calculator" />
+          <div class="project-content">
+            <h3 class="project-title">Modern Scientific Calculator</h3>
+            <p>A sleek and responsive scientific calculator designed for both basic and advanced functions.</p>
+            <button class="read-more-button" onclick="toggleReadMore('scientific-calculator')">Read More</button>
+            <div id="scientific-calculator" class="read-more" style="display: none;">
+              <ul>
+                <li>Perform basic arithmetic operations.</li>
+                <li>Advanced functions include square root, power, sine, cosine, and tangent calculations.</li>
+                <li>User-friendly interface with a clear display.</li>
+                <li>Responsive Design that adapts to various screen sizes.</li>
+                <li>Modern aesthetics with interactive feedback.</li>
+                <li>Real-time calculations with immediate updates.</li>
+                <li>Accessible Design for individuals with visual impairments.</li>
+              </ul>
+              <p><strong>Tools and Technologies Used:</strong></p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design Techniques</li>
+              </ul>
+            </div>
+            <p>Live Demo: <a href="https://modern-scientific-calculator.vercel.app">View Live</a></p>
+          </div>
+        </div>
 
-          <h3>Weather Dashboard</h3>
-          <p>
-            A responsive weather dashboard that provides current weather
-            information based on user input. It includes features to display
-            temperature, weather conditions, humidity, and wind speed. Designed
-            to be user-friendly with a clean interface and responsive design.
-          </p>
-          <ul>
-            <li>
-              Users can enter the name of a city to get current weather data.
-            </li>
-            <li>
-              Displays temperature, weather description, humidity, and wind
-              speed.
-            </li>
-            <li>
-              Includes error handling for cases where the city is not found or
-              if there are issues with the API request.
-            </li>
-            <li>
-              Responsive Design ensures the dashboard works seamlessly on mobile
-              devices, tablets, and desktops.
-            </li>
-            <li>
-              Uses the OpenWeatherMap API to fetch real-time weather data.
-            </li>
-          </ul>
-          <p>
-            View Live:
-            <a href="https://josephdevweather-dashboard.vercel.app"
-              >View Live Demo</a
-            >
-          </p>
-          <p><strong>Tools and Technologies Used:</strong></p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>OpenWeatherMap API</li>
-            <li>Responsive Design Techniques</li>
-          </ul>
+        <div class="project-card">
+          <img src="./Assets/weather dashboard shot.png" alt="Weather Dashboard" />
+          <div class="project-content">
+            <h3 class="project-title">Weather Dashboard</h3>
+            <p>A responsive weather dashboard that provides current weather information based on user input.</p>
+            <button class="read-more-button" onclick="toggleReadMore('weather-dashboard')">Read More</button>
+            <div id="weather-dashboard" class="read-more" style="display: none;">
+              <ul>
+                <li>Fetches current weather data from an API.</li>
+                <li>Allows users to search for any location.</li>
+                <li>Displays temperature, humidity, and weather conditions.</li>
+                <li>Responsive Design for optimal viewing on various devices.</li>
+                <li>Clean and intuitive user interface.</li>
+              </ul>
+              <p><strong>Tools and Technologies Used:</strong></p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>API Integration</li>
+                <li>Responsive Design Techniques</li>
+              </ul>
+            </div>
+            <p>Live Demo: <a href="https://josephdevweather-dashboard.vercel.app/">View Live</a></p>
+          </div>
         </div>
       </section>
-
-      <section id="blog">
-        <h2>Blog</h2>
-        <p>Check out my articles on Medium:</p>
-        <p>
-          <a href="https://medium.com/@josephibeh5" target="_blank"
-            >Visit my Medium Blog</a
-          >
-        </p>
-      </section>
-
-      <section id="github">
-        <h2>GitHub</h2>
-        <p>Explore my repositories and code on GitHub:</p>
-        <p>
-          <a href="https://github.com/Joseph-Ibeh" target="_blank"
-            >Visit my GitHub Profile</a
-          >
-        </p>
-        <a href="#top" class="back-to-top">Back to Top</a>
-      </section>
+    </main>
+   
+    <section id="blog" class="blog-section">
+      <h2>Blog</h2>
+      <p>Check out my articles on Medium:</p>
+      <p>
+        <a href="https://medium.com/@josephibeh5" target="_blank">Visit my Medium Blog</a>
+      </p>
+    </section>
+    
+    <section id="github" class="github-section">
+      <h2>GitHub</h2>
+      <p>Explore my repositories and code on GitHub:</p>
+      <p>
+        <a href="https://github.com/Joseph-Ibeh" target="_blank">Visit my GitHub Profile</a>
+      </p>
+      <a href="#top" class="back-to-top">Back to Top</a>
+    </section>
+    
+    <script src="./script.js"></script>
     </main>
 
     <footer>
