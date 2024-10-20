@@ -1,3 +1,4 @@
+//welcome page typing text
 document.addEventListener("DOMContentLoaded", function () {
   const text = "Welcome to my page";
   let index = 0;
@@ -14,30 +15,34 @@ document.addEventListener("DOMContentLoaded", function () {
   type();
 });
 
+
+// Nav  link
+
 document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll("nav a");
+  const navLinks = document.querySelectorAll("nav a"); 
 
   const setActiveLink = () => {
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.split("/").pop(); 
     navLinks.forEach((link) => {
-      if (link.getAttribute("href") === currentPath) {
-        link.classList.add("active");
+      const linkPath = link.getAttribute("href");
+     
+      if (linkPath === currentPath) {
+        link.classList.add("active"); 
       } else {
-        link.classList.remove("active");
+        link.classList.remove("active"); 
       }
     });
   };
 
-  setActiveLink();
+  setActiveLink(); 
 
   navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      setActiveLink();
-    });
+    link.addEventListener("click", setActiveLink); 
   });
 });
 
 
+//Read more project display
 function toggleReadMore(projectId) {
   const projectDetails = document.getElementById(projectId);
   if (projectDetails.style.display === "none" || projectDetails.style.display === "") {
