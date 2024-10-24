@@ -51,3 +51,21 @@ function toggleReadMore(projectId) {
     projectDetails.style.display = "none";
   }
 }
+
+ // JavaScript for scroll animations for  the class="section-animate"
+ const sections = document.querySelectorAll('.section-animate');
+ const observer = new IntersectionObserver(entries => {
+   entries.forEach(entry => {
+     if (entry.isIntersecting) {
+       entry.target.classList.add('section-visible');
+       // Unobserve the section once it becomes visible
+       observer.unobserve(entry.target);
+     }
+   });
+ });
+
+ sections.forEach(section => {
+   observer.observe(section);
+ });
+
+ 

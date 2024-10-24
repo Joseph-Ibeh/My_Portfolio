@@ -23,6 +23,18 @@ header h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* for my Scroll Animation Styles  for the class="section-animate"*/
+.section-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 header p {
   margin: 0.5rem 0;
   font-size: 1.2rem;
@@ -301,6 +313,7 @@ section {
   margin-right: 5px;
   font-size: 1.5rem;
 }
+
 
 @media (max-width: 768px) {
   .skills-container {
