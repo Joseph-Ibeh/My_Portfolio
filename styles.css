@@ -58,22 +58,22 @@ nav {
   margin-top: 1rem;
 }
 
-nav a { 
-  color: #fff; 
-  text-decoration: none; 
-  margin: 0 15px; 
-  font-size: 1.1rem; 
-  transition: color 0.3s ease; 
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #4caf50; 
+  color: #4caf50;
 }
 
 nav a.active {
-  color: #4caf50; 
-  text-decoration: underline; 
-  font-weight: bold; 
+  color: #4caf50;
+  text-decoration: underline;
+  font-weight: bold;
 }
 main {
   flex: 1;
@@ -122,7 +122,6 @@ main {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 }
-
 
 @media (max-width: 992px) {
   .profile-pic {
@@ -275,7 +274,7 @@ section {
 }
 
 .skills-container {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   gap: 20px;
 }
@@ -322,29 +321,27 @@ section {
 
 @media (min-width: 769px) {
   .skills-container {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-direction: row; 
+    flex-direction: row;
   }
 }
 
-
 @media (max-width: 768px) {
   .skills-container {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 10px;
   }
-  
+
   .skills-category {
     margin-bottom: 20px;
   }
-  
+
   .skills-category li::before {
     font-size: 1.2rem;
   }
 }
-
 
 #projects {
   background: #fff;
@@ -362,7 +359,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .project-card {
@@ -371,7 +368,7 @@ section {
   margin: 10px;
   padding: 15px;
   max-width: 300px;
-  flex: 1 1 calc(33.333% - 20px); 
+  flex: 1 1 calc(33.333% - 20px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
@@ -384,7 +381,6 @@ section {
 .project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #4caf50;
-  
 }
 
 .read-more {
@@ -397,7 +393,8 @@ section {
   text-decoration: none;
 }
 
-.blog-section, .github-section {
+.blog-section,
+.github-section {
   margin-top: 40px;
 }
 
@@ -408,16 +405,15 @@ footer {
 
 @media (max-width: 768px) {
   .project-card {
-      flex: 1 1 calc(50% - 20px); 
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .project-card {
-      flex: 1 1 calc(100% - 20px);
+    flex: 1 1 calc(100% - 20px);
   }
 }
-
 
 .read-more-button {
   background-color: black;
@@ -439,25 +435,23 @@ footer {
 }
 
 .read-more ul {
-  list-style-type: none; 
-  padding: 0; 
+  list-style-type: none;
+  padding: 0;
 }
 
 .read-more li {
-  padding-left: 20px; 
-  margin-bottom: 10px; 
-  position: relative; 
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .read-more li::before {
-  content: '✔'; 
-  position: absolute; 
-  left: 0; 
-  color: #4caf50; 
-  font-size: 1.0em;
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4caf50;
+  font-size: 1em;
 }
-
-
 
 .back-to-top {
   display: none;
@@ -481,20 +475,20 @@ footer {
   .back-to-top {
     display: block;
   }
-
+}
 
 section {
   margin-bottom: 2rem;
   animation: fadeIn 1s ease-out forwards;
-  text-align: center; 
+  text-align: center;
 }
 
 .blog-section,
 .github-section {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
